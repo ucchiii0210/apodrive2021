@@ -1,0 +1,74 @@
+<div class="items-sell-contents">
+  <div class="items-sell-main">
+    <h2 class="items-sell-title">詳細画面</h2>
+      <div class="new-items">
+        <div class="weight-bold-text">
+          受注番号
+        </div>
+        <div class="items-text"> <%= @order.order_number %></div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            コメント
+          </div>
+          <div class="order-text"><%= @order.text %></div>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            お客様名
+          </div>
+          <div class="items-text"><%= @order.name %></div>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            電話番号
+          </div>
+          <div class="items-text"><%= @order.tel %></div>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            郵便番号
+          </div>
+          <div class="items-text"><%= @order.postal %></div>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            住所
+          </div>
+          <div class="items-text"><%= @order.address %></div>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            車種
+          </div>
+          <div class="items-text"><%= @order.product %></div>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            配送日
+          </div>
+          <div class='input-birth-wrap'>
+             <div class="items-text"><%= @order.delivery_date %></div>
+          </div>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            AM or PM
+          </div>
+          <div class="items-text"><%= @order.ampm.name %></div>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            ドライバー
+          </div>
+          <div class="items-text"><%= @order.driver.name %></div>
+        </div>
+        
+        <div class="items-explain">
+
+      </div>
+      <div class="sell-btn-contents">
+        <%=link_to 'もどる', root_path, class:"back-btn" %>
+      </div>
+  </div>
+</div>
+<%= render "shared/footer" %>

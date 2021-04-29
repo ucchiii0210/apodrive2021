@@ -1,0 +1,86 @@
+<div class="items-sell-contents">
+
+  <div class="items-sell-main">
+    <%= form_with(model:@order ,local: true) do |f| %>
+    <h2 class="items-sell-title">新規登録画面</h2>
+      <div class="new-items">
+        <div class="weight-bold-text">
+          受注番号
+        </div>
+        <%= f.text_area :order_number , class:"items-text", id:"item-name" %>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            お客様名
+          </div>
+          <%= f.text_area :name , class:"items-text", id:"item-info" %>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            電話番号
+          </div>
+          <%= f.text_area :tel, class:"items-text", id:"item-info" %>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            郵便番号
+          </div>
+          <%= f.text_area :postal , class:"items-text", id:"item-info" %>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            住所
+          </div>
+          <%= f.text_area :address , class:"items-text", id:"item-info" %>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            車種
+          </div>
+          <%= f.text_area :product , class:"items-text", id:"item-info" %>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            配送日
+          </div>
+          <div class='input-birth-wrap'>
+             <%= raw sprintf(
+                  f.date_select(
+                    :delivery_date,
+                    class:'select-birth',
+                    id:"birth-date",
+                    include_blank: true,
+                    use_month_numbers: true,
+                    start_year: Time.now.year ,
+                    date_separator: '%s'),
+                  "<p> 年 </p>", "<p> 月 </p>") + "<p> 日 </p>" %>
+          </div>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            AM or PM
+          </div>
+          <%= f.collection_select(:ampm_id, Ampm.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            ドライバー
+          </div>
+          <%= f.collection_select(:driver_id, Driver.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            コメント
+          </div>
+          <%= f.text_area :text , class:"order-text", id:"item-info" %>
+        </div>
+        <div class="items-explain">
+
+      </div>
+      <div class="sell-btn-contents">
+        <%= f.submit "変更する" ,class:"sell-btn" %>
+        <%=link_to 'もどる', root_path, class:"back-btn" %>
+      </div>
+    <%end%>
+  </div>
+</div>
+<%= render "shared/footer" %>
