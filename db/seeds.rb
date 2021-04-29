@@ -1,7 +1,20 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Order.create(order_number: 87659, name: '佐藤', tel: '19012345678', postal: '123-1234', address: '東京都板橋区本町1−2−3', product: 'スソBK', apointer: '1')
+ Order.create(order_number: 87660, name: '鈴木', tel: '19012345678', postal: '123-1235', address: '東京都板橋区本町1−2−4', product: 'スソS V', apointer: '1')
+ Order.create(order_number: 87661, name: '高橋', tel: '19012345678', postal: '123-1236', address: '東京都板橋区本町1−2−5', product: 'パプリカRD', apointer: '1')
+ Order.create(order_number: 87662, name: '田中', tel: '19012345678', postal: '123-1237', address: '東京都板橋区本町1−2−6', product: 'ラングNV', apointer: '1')
+ Order.create(order_number: 87663, name: '伊藤', tel: '19012345678', postal: '123-1238', address: '東京都板橋区本町1−2−7', product: '２７６HD WH', apointer: '1')
+ Order.create(order_number: 87664, name: '渡辺', tel: '19012345678', postal: '123-1239', address: '東京都板橋区本町1−2−8', product: 'スソBK', apointer: '1')
+ Order.create(order_number: 87665, name: '山本', tel: '19012345678', postal: '123-1240', address: '東京都板橋区本町1−2−9', product: 'スソBK', apointer: '1')
+ Order.create(order_number: 87666, name: '中村', tel: '19012345678', postal: '123-1241', address: '東京都板橋区本町1−2−10', product: 'スソBK', apointer: '1')
+ Order.create(order_number: 87667, name: '小林', tel: '19012345678', postal: '123-1242', address: '東京都板橋区本町1−2−11', product: 'スソBK', apointer: '2')
+ Order.create(order_number: 87668, name: '加藤', tel: '19012345678', postal: '123-1243', address: '東京都板橋区本町1−2−12', product: 'スソBK', apointer: '2')
+ Order.create(order_number: 87669, name: '吉田', tel: '19012345678', postal: '123-1244', address: '東京都板橋区本町1−2−13', product: 'スソBK', apointer: '2')
+ Order.create(order_number: 87670, name: '山田', tel: '19012345678', postal: '123-1245', address: '東京都板橋区本町1−2−14', product: 'スソBK', apointer: '2')
+ Order.create(order_number: 87671, name: '佐々木', tel: '19012345678', postal: '123-1246', address: '東京都板橋区本町1−2−15', product: 'スソBK', apointer: '2')
+ Order.create(order_number: 87672, name: '山口', tel: '19012345678', postal: '123-1247', address: '東京都板橋区本町1−2−16', product: 'スソBK', apointer: '2')
+ Order.create(order_number: 87673, name: '松本', tel: '19012345678', postal: '123-1248', address: '東京都板橋区本町1−2−17', product: 'スソBK', apointer: '3')
+ Order.create(order_number: 87674, name: '井上', tel: '19012345678', postal: '123-1249', address: '東京都板橋区本町1−2−18', product: 'スソBK', apointer: '3')
+ Order.create(order_number: 87675, name: '木村', tel: '19012345678', postal: '123-1250', address: '東京都板橋区本町1−2−19', product: 'スソBK', apointer: '3')
+ Order.create(order_number: 87676, name: '林', tel: '19012345678', postal: '123-1251', address: '東京都板橋区本町1−2−20', product: 'スソBK', apointer: '3')
+ Order.create(order_number: 87677, name: '斎藤', tel: '19012345678', postal: '123-1252', address: '東京都板橋区本町1−2−21', product: 'スソBK', apointer: '3')
+ Order.create(order_number: 87678, name: '清水', tel: '19012345678', postal: '123-1253', address: '東京都板橋区本町1−2−22', product: 'スソBK', apointer: '3')

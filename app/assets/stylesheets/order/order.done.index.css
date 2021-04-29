@@ -1,0 +1,33 @@
+.titled{
+  font-size: 30px;
+  margin-left: 10vw;
+}
+
+
+.deys-infod{
+  display: block;
+  color: rgb(182, 12, 159);
+  font-size: 20px;
+}
+
+.drivers-listd{
+  display: flex;
+  
+}
+
+.dr{
+  display: block;
+}
+
+.orders-listd{
+ width:10vw;
+ height:30vw;
+ border:solid black 1px;
+ justify-content:au
+}
+
+.lined{
+  height:1px;
+  weight:100%;
+  background-color: black ;
+}

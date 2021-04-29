@@ -1,0 +1,25 @@
+<h1 class = titled>本日確定内容</h1>
+  <% days = ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"] %>
+  <% day = Date.today.wday %>
+  <% wday = days[day] %>
+  <P class= 'deys-infod'><%= Date.today %> <%= wday %> </P>
+
+<div class= 'drivers-listd'>
+  <% 9.times do |h|%> 
+    <div class= 'orders-listd'>
+    <% dr = ["未定","法人", "但馬", "鈴木", "菊池","大竹", "加藤", "尾田", "梅田", "本田"] %>
+    <P class= dr ><%= dr[h] %></p>
+    <div class='lined'></div>
+      <% 2.times do |ap|%>
+        <% @orders.each do |order| %>
+          <% if order.delivery_date == Date.today && order.driver.id == h && order.ampm.id == ap %>
+              <%=order.order_number %><br>
+          <% end %>
+        <% end %>
+        <%if ap == 0 %>
+          <div class='lined'></div>
+        <% end %>
+      <% end %> 
+    </div>
+  <% end %>
+</div>
