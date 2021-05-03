@@ -1,24 +1,26 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# テーブル設計
 
-Things you may want to cover:
+## users テーブル
 
-* Ruby version
+| Column             | Type       | Options                       |
+| ------------------ | ---------- | ----------------------------- |
+| email              | string     | null: false,unique: true      |
+| encrypted_password | string     | null: false                   |
+| nickname           | string     | null: false                   |
 
-* System dependencies
 
-* Configuration
+### orders テーブル
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| Column        | Type       | Options                       |
+| ------------- | ---------- | ----------------------------- |
+| order_number  | string     | null:false                    |
+| name          | string     | null:false                    |
+| postal        | string     | null:false                    |
+| tell          | string     | null:false                    |
+| address       | string     | null:false                    |
+| delivery      | integer    |                               |
+| ampm_id       | integer    |                               |
+| driver_id     | integer    |                               |
+| text          | text       |                               |
+| apointer      | string     |                               |
